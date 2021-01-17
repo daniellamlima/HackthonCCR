@@ -33,6 +33,12 @@ $app->get('/', function ($request, $response, $args) {
     return $renderer->render($response, "web.html", $args);
 });
 
+$app->get('/acompanhamento', function ($request, $response, $args) {
+
+    $renderer = new PhpRenderer('./templates');
+    return $renderer->render($response, "acompanhamento.html", $args);
+});
+
 
 $app->map(['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], '/{routes:.+}', function ($request, $response) {
     throw new HttpNotFoundException($request);
