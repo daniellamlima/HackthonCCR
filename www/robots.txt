@@ -1,0 +1,11 @@
+# É um arquivo público que tem o objetivo de 
+# repassar instruções aos robôs que visitam o
+# seu site. Favorece que o site seja melhor
+# rankeado no google caso esteja configurado
+
+# Para todo e qualquer agente se faz as ações abaixo
+User-agent: *
+
+#Não é permitido indexar os caminhos abaixo
+Disallow: /
+

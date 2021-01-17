@@ -2,6 +2,8 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,composer,visualstudiocode
 
 ### Composer ###
+
+### Composer ###
 composer.phar
 www/vendor/
 docker/mysql
