@@ -42,7 +42,9 @@ de qualquer lugar do Brasil.
 A partir dos dados desta plataforma, é possível obter relatórios de desenvolvimento e diálogos permanentes, permitindo a busca pela autonomia e protagonismo dos jovens participantes do projeto, visando sua inserção no mercado de trabalho.
 
 # Como funciona, você provavelmente pergunta ?
-# Diagramas
+
+Colocar aqui um diagrama de funcionamento (Sugestão)
+
 # Demo
 # Tecnologias Utilizadas
 ## Front-End
@@ -53,4 +55,3 @@ A partir dos dados desta plataforma, é possível obter relatórios de desenvolv
 - Docker
 - PHP 7.4.11
 - MySQL
-# Instalação e Execução
