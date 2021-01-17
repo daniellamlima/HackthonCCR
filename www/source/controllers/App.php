@@ -7,9 +7,9 @@ use source\core\View;
 
 /**
  * @Descricao: Classe que implementa o Controller App
- * @Autor: Iury Gomes de Oliveira
- * @Email: iurygdeoliveira@gmail.com
- * @copyright (c) 2020, Iury Gomes de Oliveira
+ * @Autor: Daniela Lima
+ * @Email: daniellalima@gmail.com
+ * @copyright (c) 2020, Daniela Lima
  */
 class App extends Controller
 {

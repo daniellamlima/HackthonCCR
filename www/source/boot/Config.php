@@ -2,9 +2,9 @@
 
 /**
  * @Descricao: Arquivo com as configurações globais do sistema
- * @Autor: Iury Gomes de Oliveira
- * @Email: iurygdeoliveira@gmail.com
- * @copyright (c) 2020, Iury Gomes de Oliveira
+ * @Autor: Daniela Lima
+ * @Email: daniellalima@gmail.com
+ * @copyright (c) 2020, Daniela Lima
  */
 
 /**
@@ -32,3 +32,33 @@ define("CONF_PASSWD_MIN_LEN", 8);
 define("CONF_PASSWD_MAX_LEN", 40);
 define("CONF_PASSWD_ALGO", PASSWORD_DEFAULT);
 define("CONF_PASSWD_OPTION", ["cost" => 10]);
+
+/**
+ * DB
+ */
+
+use RedBeanPHP\R;
+
+R::setup(
+    "mysql:host=" . getenv('MYSQL_HOST') .
+        ";dbname=" . getenv('MYSQL_DATABASE'),
+    getenv('MYSQL_USER'),
+    getenv('MYSQL_PASSWORD'),
+); //for both mysql or mariaDB
+
+R::getDatabaseAdapter()->getDatabase()->stringifyFetches(FALSE);
+R::getDatabaseAdapter()->getDatabase()->getPDO()->setAttribute(PDO::ATTR_EMULATE_PREPARES, FALSE);
+
+/**
+ * MAIL
+ */
+define("CONF_MAIL_HOST", "smtp.sendgrid.net");
+define("CONF_MAIL_PORT", "587");
+define("CONF_MAIL_USER", "??");
+define("CONF_MAIL_PASS", "??");
+define("CONF_MAIL_SENDER", ["name" => "Daniella", "address" => "Daniella Lima"]);
+define("CONF_MAIL_OPTION_LANG", "br");
+define("CONF_MAIL_OPTION_HTML", true);
+define("CONF_MAIL_OPTION_AUTH", true);
+define("CONF_MAIL_OPTION_SECURE", "tls");
+define("CONF_MAIL_OPTION_CHARSET", "utf-8");

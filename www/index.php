@@ -9,8 +9,12 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use source\core\Session;
 use CoffeeCode\Router\Router;
+use source\models\Connect;
+use \RedBeanPHP\R;
 
-echo "Pagina Inicial";
+$customerDB = R::dispense('customer', 1);
+var_dump($customerDB);
+
 // $route->namespace("source\controllers");
 // $route->group(null);
 
