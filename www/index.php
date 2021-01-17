@@ -7,9 +7,7 @@ require __DIR__ . "/vendor/autoload.php";
 use Slim\Views\PhpRenderer;
 use Slim\Exception\HttpNotFoundException;
 use Slim\Factory\AppFactory;
-use Api\Controllers\Admin;
-use Api\Controllers\Login;
-use Api\Controllers\Web;
+
 
 $app = AppFactory::create();
 
@@ -32,7 +30,7 @@ $app->add(function ($request, $handler) {
 $app->get('/', function ($request, $response, $args) {
 
     $renderer = new PhpRenderer('./templates');
-    return $renderer->render($response, "web.php", $args);
+    return $renderer->render($response, "web.html", $args);
 });
 
 
