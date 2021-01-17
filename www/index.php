@@ -39,6 +39,12 @@ $app->get('/', function ($request, $response, $args) {
     return $renderer->render($response, "web.html", $args);
 });
 
+$app->get('/alunos', function ($request, $response, $args) {
+
+    $renderer = new PhpRenderer('./templates');
+    return $renderer->render($response, "alunos.html", $args);
+});
+
 $app->get('/acompanhamento', function ($request, $response, $args) {
 
     $renderer = new PhpRenderer('./templates');
