@@ -10,31 +10,24 @@
         }
     ],
     "minimum-stability": "stable",
-    "config": {
-        "vendor-dir": "vendor"
-    },
-    "autoload":{
-        "psr-4":{
-            "source\\core\\": "source/core/",
-            "source\\models\\": "source/models/",
-            "source\\support\\": "source/support/",
-            "source\\controllers\\": "source/controllers/"
+    "autoload": {
+        "psr-4": {
+            "Api\\Controllers\\": "Api/Controllers/",
+            "Api\\Model\\": "Api/Model/"
         },
-        "files":[
-            "source/boot/Config.php",
-            "source/boot/Helpers.php"
+        "files": [
+            "Api/Boot/Config.php"
         ]
     },
     "require": {
         "php": "^7.4",
-        "ext-PDO": "^7.4",
-        "gabordemooij/redbean": "^v5.6",
-        "coffeecode/router": "1.0.*",
-        "league/plates": "v4.0.0-alpha",
-        "matthiasmullie/minify": "^1.3",
-        "phpmailer/phpmailer": "^6.2"
-    },                                
-    "require-dev": {
-        
+        "ext-pdo": "^7.1",
+        "coffeecode/datalayer": "^1.1.4",
+        "slim/slim": "^4.5.0",
+        "slim/psr7": "^1.1.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "guzzlehttp/psr7": "^1.6.1",
+        "symfony/polyfill-intl-idn": "^v1.17.1",
+        "slim/php-view": "^3.0"
     }
 }

@@ -1,48 +1,47 @@
 <?php
+
 ob_start();
 
-require_once __DIR__ . '/vendor/autoload.php';
+require __DIR__ . "/vendor/autoload.php";
+
+use Slim\Views\PhpRenderer;
+use Slim\Exception\HttpNotFoundException;
+use Slim\Factory\AppFactory;
+use Api\Controllers\Admin;
+use Api\Controllers\Login;
+use Api\Controllers\Web;
+
+$app = AppFactory::create();
+
+$app->options('/{routes:.+}', function ($request, $response, $args) {
+    return $response;
+});
+
+$app->add(function ($request, $handler) {
+    $response = $handler->handle($request);
+    return $response
+        ->withHeader('Access-Control-Allow-Origin', '*')
+        ->withHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept, Origin, Authorization')
+        ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
+});
 
 
-/**
- * ROUTES
- */
+// ROUTES ###########################################
 
-// use CoffeeCode\Router\Router;
+// Create Authentication
+$app->get('/', function ($request, $response, $args) {
 
-// $route = new Router(url(), ":");
-// $route->namespace("source\controllers");
-// $route->group(null);
-
-// /*
-//  * WEB ROUTES
-//  */
-// $route->get("/", "App:home");
-
-// /*
-//  * APP ROUTES
-//  */
-// $route->get("/", "App:home");
+    $renderer = new PhpRenderer('./templates');
+    return $renderer->render($response, "web.php", $args);
+});
 
 
-// /**
-//  * ERROR ROUTES
-//  */
-// $route->group("/ops");
-// $route->get("/{errorcode}", "Accounts:error");
-// $route->group(null);
+$app->map(['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], '/{routes:.+}', function ($request, $response) {
+    throw new HttpNotFoundException($request);
+});
 
-// /**
-//  * ROUTE
-//  */
-// $route->dispatch();
+// RUN ###########################################
 
-// /**
-//  * ERROR REDIRECT
-//  */
-
-// if ($route->error()) :
-//     $route->redirect("/ops/{$route->error()}");
-// endif;
+$app->run();
 
 ob_end_flush();

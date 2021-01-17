@@ -22,7 +22,7 @@ IMAGEM AQUI
 
 Evasão escolar, falta de perspectivas de crescimento e obstáculos para conseguir o primeiro emprego. Como vencer esses desafios? 
 
-Em um mundo hiperconectado e tecnológico, os recursos são distribuídos de maneira desigual, especialmente para a população que enfrenta algum tipo de vulnerabilidade social. A ausência tecnológica dificulta não apenas o acesso ao conhecimento, mas também à oportunidades, emprego e cultura?
+Em um mundo hiperconectado e tecnológico, os recursos são distribuídos de maneira desigual, especialmente para a população que enfrenta algum tipo de vulnerabilidade social. A ausência tecnológica dificulta não apenas o acesso ao conhecimento, mas também a oportunidades, emprego e cultura.
 
 Neste cenário, como podemos gerar soluções inovadoras com o uso da tecnologia para fomentar a inclusão do publico jovem nas dimensões cultural, educacional, geração de renda e diversidade?
 
@@ -31,7 +31,7 @@ De que maneira podemos criar uma rede de apoio, com os recursos educacionais e e
 
 O Integra é uma plataforma idealizada para criação de uma de rede de apoio para inclusão de jovens do Ensino Médio e EJA (Educação de Jovens e Adultos). Esta plataforma, é formada por escolas, famílias, mentores, profissionais de inclusão e empresas
 
-<b>A idéia central do projeto é fornecer aos jovems condições para que
+<b>A idéia central do projeto é fornecer aos jovens condições para que
 eles superem as vulnerabilidades sociais de seu contexto, tornando-o a peça central desta plataforma, recebendo intervenções dos profissionais da inclusão, educação escolar, apoio familiar, mentorias e treinamento técnico por empresas.</b>
 
 Além disso, a plataforma pode contribuir de maneira efetiva para o fortalecimentos da relação escola-estudante-família, colocando o jovem num lugar de protagonismo.
