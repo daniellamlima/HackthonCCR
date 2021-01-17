@@ -32,7 +32,7 @@ De que maneira podemos criar uma rede de apoio, com os recursos educacionais e e
 O Integra é uma plataforma idealizada para criação de uma de rede de apoio para inclusão de jovens do Ensino Médio e EJA (Educação de Jovens e Adultos). Esta plataforma, é formada por escolas, famílias, mentores, profissionais de inclusão e empresas
 
 <b>A idéia central do projeto é fornecer aos jovems condições para que
-eles superem as vulnerabilidade sociais de seu contexto, tornando-o a peça central desta plataforma, recebendo intervenções dos profissionais da inclusão, educação escolar, apoio familiar, mentorias e treinamento técnico por empresas.</b>
+eles superem as vulnerabilidades sociais de seu contexto, tornando-o a peça central desta plataforma, recebendo intervenções dos profissionais da inclusão, educação escolar, apoio familiar, mentorias e treinamento técnico por empresas.</b>
 
 Além disso, a plataforma pode contribuir de maneira efetiva para o fortalecimentos da relação escola-estudante-família, colocando o jovem num lugar de protagonismo.
 

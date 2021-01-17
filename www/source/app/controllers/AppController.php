@@ -11,19 +11,18 @@ use source\core\View;
  * @Email: daniellalima@gmail.com
  * @copyright (c) 2020, Daniela Lima
  */
-class App extends Controller
+class AppController extends Controller
 {
 
-    /** @var Usuario */
-    private $user;
+    private $template;
 
     /**
      * App constructor.
      */
     public function __construct()
     {
-
-        parent::__construct(__DIR__ . "/../../themes/" . CONF_VIEW_APP . "/");
+        $this->template = new View();
+        $this->template->Path("teste", "app");
     }
 
     /**
@@ -31,14 +30,6 @@ class App extends Controller
      */
     public function home(): void
     {
-
-        $head = $this->Seo->render(
-            CONF_SITE_NAME . " | Home ",
-            CONF_SITE_DESC,
-            url(),
-            image("images/share/share.png", 1201, 1201),
-            false
-        );
 
         echo $this->View->Render("home", [
             "head" => $head,

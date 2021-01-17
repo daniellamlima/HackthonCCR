@@ -20,10 +20,6 @@ define("CONF_URL_ERROR", CONF_URL_BASE . "/404");
 define("CONF_DATE_BR", "d/m/Y H:i:s");
 define("CONF_DATE_APP", "Y-m-d H:i:s");
 
-/**
- * SESSION
- */
-define("CONF_SES_PATH", __DIR__ . "/../../storage/sessions/");
 
 /**
  * PASSWORD
@@ -48,6 +44,30 @@ R::setup(
 
 R::getDatabaseAdapter()->getDatabase()->stringifyFetches(FALSE);
 R::getDatabaseAdapter()->getDatabase()->getPDO()->setAttribute(PDO::ATTR_EMULATE_PREPARES, FALSE);
+
+/**
+ * VIEW
+ */
+define("CONF_VIEW_PATH", __DIR__ . "/../views/");
+define("CONF_VIEW_EXT", "php");
+define("CONF_VIEW_LOGIN", "login");
+define("CONF_VIEW_APP", "app");
+
+/**
+ * UPLOAD
+ */
+define("CONF_UPLOAD_DIR", "storage");
+define("CONF_UPLOAD_IMAGE_DIR", "images");
+define("CONF_UPLOAD_FILE_DIR", "files");
+define("CONF_UPLOAD_MEDIA_DIR", "medias");
+
+/**
+ * IMAGES
+ */
+define("CONF_IMAGE_CACHE", CONF_UPLOAD_DIR . "/" . CONF_UPLOAD_IMAGE_DIR . "/cache");
+define("CONF_IMAGE_SIZE", 2000);
+define("CONF_IMAGE_QUALITY", ["jpg" => 75, "png" => 5]);
+
 
 /**
  * MAIL
