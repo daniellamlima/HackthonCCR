@@ -3,7 +3,7 @@ Repositório público contendo o projeto desenvolvido para o Hackthton CCR 2º E
 # Quem somos nós
 IMAGEM AQUI
 <p align="center">
-  <img src="" width="700">
+  <img src="Time.png" width="700">
 </p>
 
 - [Gilson Andrade de Oliveira Filho](https://gilsonoliveira180029618.wordpress.com/) (Designer e Desenvolvimento)
@@ -54,4 +54,3 @@ Colocar aqui um diagrama de funcionamento (Sugestão)
 ## Back-End
 - Docker
 - PHP 7.4.11
-- MySQL

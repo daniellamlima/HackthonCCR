@@ -27,13 +27,13 @@ $app->add(function ($request, $handler) {
 // ROUTES ###########################################
 
 // Create Authentication
-$app->get('/login', function ($request, $response, $args) {
+$app->get('/', function ($request, $response, $args) {
 
     $renderer = new PhpRenderer('./templates');
     return $renderer->render($response, "login.html", $args);
 });
 
-$app->get('/', function ($request, $response, $args) {
+$app->get('/web', function ($request, $response, $args) {
 
     $renderer = new PhpRenderer('./templates');
     return $renderer->render($response, "web.html", $args);
