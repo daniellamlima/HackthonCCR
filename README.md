@@ -12,12 +12,6 @@ IMAGEM AQUI
 - [Juliana Sardinha Rafael](https://www.linkedin.com/in/jsrafael) (Business)
 - [Jonathan Silva das Chagas](https://www.linkedin.com/in/jonathan-chagas-8983059b/) (Marketing)
 
-# Logo do Projeto
-IMAGEM AQUI
-<p align="center">
-  <img src="" width="700">
-</p>
-
 # Desafio ?
 
 Evasão escolar, falta de perspectivas de crescimento e obstáculos para conseguir o primeiro emprego. Como vencer esses desafios? 
@@ -41,9 +35,6 @@ de qualquer lugar do Brasil.
 
 A partir dos dados desta plataforma, é possível obter relatórios de desenvolvimento e diálogos permanentes, permitindo a busca pela autonomia e protagonismo dos jovens participantes do projeto, visando sua inserção no mercado de trabalho.
 
-# Como funciona, você provavelmente pergunta ?
-
-Colocar aqui um diagrama de funcionamento (Sugestão)
 
 # Demo
 # Tecnologias Utilizadas
